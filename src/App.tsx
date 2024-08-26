@@ -1,11 +1,9 @@
-import { Button } from "@mui/material";
+import Navbar from "./components/Navbar";
 
 const App = () => {
   return (
     <div>
-      <Button variant="contained" color="primary" className="mt-4">
-        Material UI  2
-      </Button>
+      <Navbar/>
     </div>
   );
 };
