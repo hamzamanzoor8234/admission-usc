@@ -2,6 +2,7 @@ import PartnerBanner from "../assets/Group 31.png";
 import institutions from "../assets/institutions.png";
 import jobandinternship from "../assets/job and internship.png";
 import startupgrants from "../assets/startup and grants.png";
+import Container from "./Container";
 import CourseCard from "./CourseCard";
 const Partners = () => {
   const partnerData = [
@@ -22,23 +23,25 @@ const Partners = () => {
   ];
   return (
     <section>
-      <div className="flex items-center mr-5">
-        <h3 className="text-[64px] ">
-          <span className="font-bold text-[#2EC89C]">Our</span>
-          Partners
-        </h3>
-        <img src={PartnerBanner} alt="PartnerBanner" />
-      </div>
-      <div className="flex flex-wrap flex-col lg:flex-row max-w-[1360px] mx-auto gap-5 px-5 mt-7">
-        {partnerData.map((obj) => (
-          <CourseCard
-            key={obj.title}
-            title={obj.title}
-            image={obj.image}
-            desc={obj.desc}
-          />
-        ))}
-      </div>
+      <Container>
+        <div className="flex items-center mr-5 flex-col lg:flex-row">
+          <h3 className="text-[64px] ">
+            <span className="font-bold text-[#2EC89C] mr-2">Our</span>
+            Partners
+          </h3>
+          <img src={PartnerBanner} alt="PartnerBanner" />
+        </div>
+        <div className="flex flex-wrap flex-col lg:flex-row mx-auto gap-5 mt-7">
+          {partnerData.map((obj) => (
+            <CourseCard
+              key={obj.title}
+              title={obj.title}
+              image={obj.image}
+              desc={obj.desc}
+            />
+          ))}
+        </div>
+      </Container>
     </section>
   );
 };

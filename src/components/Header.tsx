@@ -3,6 +3,7 @@ import CourseExploration from "../assets/Course Exploration.png";
 import addOne from "../assets/banner1.png";
 import addTwo from "../assets/Screenshot_1.png";
 import NavigationTile from "./NavigationTile";
+import Container from "./Container";
 const Header = () => {
   const tilesData = [
     {
@@ -58,20 +59,22 @@ const Header = () => {
             </div>
           </div>
         </div>
-        <div className="flex mt-[114px] max-w-[1320px] w-full gap-8 mx-auto justify-center flex-wrap">
-          {tilesData.map((tile) => (
-            <div key={tile.title} className="max-w-[300px] w-full mb-8">
-              <div className="w-0 h-0 p-[50%] relative bg-[#FFFFFF63]">
-                <h3 className="xl:text-[96px] lg:text-[84px] text-[96px] text-white xl:top-[72px] lg:top-[58px] top-[32px] left-0 w-full text-center absolute">
-                  {tile.value}
-                </h3>
-                <h5 className="text-white xl:text-[36px] lg:text-[28px] text-[36px] bottom-[29px] left-0 w-full text-center absolute">
-                  {tile.title}
-                </h5>
+        <Container>
+          <div className="flex mt-[114px] w-full gap-8 mx-auto justify-center lg:justify-between flex-wrap">
+            {tilesData.map((tile) => (
+              <div key={tile.title} className="max-w-[300px] w-full mb-8">
+                <div className="w-0 h-0 p-[50%] relative bg-[#FFFFFF63]">
+                  <h3 className="xl:text-[96px] lg:text-[84px] text-[96px] text-white xl:top-[72px] lg:top-[58px] top-[32px] left-0 w-full text-center absolute">
+                    {tile.value}
+                  </h3>
+                  <h5 className="text-white xl:text-[36px] lg:text-[28px] text-[36px] bottom-[29px] left-0 w-full text-center absolute">
+                    {tile.title}
+                  </h5>
+                </div>
               </div>
-            </div>
-          ))}
-        </div>
+            ))}
+          </div>
+        </Container>
         <NavigationTile />
       </div>
     </header>
