@@ -73,11 +73,11 @@ function Navbar() {
             </Menu>
           </Box>
           <Box
-            as={"ul"}
+            component={"ul"}
             sx={{ display: { xs: "none", lg: "flex", listStyleType: "disc" } }}
           >
             {pages.map((page) => (
-              <Box as={"li"} mx={3}>
+              <Box component={"li"} mx={3}>
                 <Button
                   key={page}
                   onClick={handleCloseNavMenu}
