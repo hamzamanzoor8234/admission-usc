@@ -8,8 +8,8 @@ module.exports = {
         secondary: "#E2E2E2",
       },
       backgroundImage: {
-        "header-pattern": "url('./src/assets/Captureccc 1.png')",
-        "header-banner": "url('./src/assets/Group 17.png')",
+        "header-pattern": "url('./public/Captureccc 1.png')",
+        "header-banner": "url('./public/Group 17.png')",
       },
     },
   },
