@@ -11,7 +11,7 @@ const Footer = () => {
         alt="banner"
       />
       <Container>
-        <div className="flex flex-col lg:flex-row z-10 relative">
+        <div className="flex flex-col lg:flex-row z-10 relative flex items-center">
           <div className="flex-2">
             <div className="flex justify-center mt-[90px]">
               <button
@@ -140,7 +140,7 @@ const Footer = () => {
               <img src={logo} alt="logo" className="w-[125px] h-[125px]" />
             </div>
           </div>
-          <div className="flex-[3] flex mt-20 justify-center gap-5">
+          <div className="flex-[3] flex mt-20 justify-center gap-5 ">
             <ul className="text-white text-xl">
               <li className="mb-3">Select your Course</li>
               <li className="mb-3">Apply for Admission</li>
