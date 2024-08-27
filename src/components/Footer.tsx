@@ -7,11 +7,11 @@ const Footer = () => {
     <footer className="relative mt-[40px] bg-primary lg:bg-transparent">
       <img
         src={banner}
-        className="absolute pointer-events-none w-full top-0  left-0 z-0 lg:block hidden"
+        className="relative pointer-events-none w-full z-0 lg:block hidden"
         alt="banner"
       />
-      <Container>
-        <div className="flex flex-col lg:flex-row z-10 relative flex items-center">
+      <Container className="z-10 lg:absolute lg:top-[50%] lg:left-[50%] lg:translate-x-[-50%] lg:translate-y-[-50%] relative w-full h-full top-0  left-0">
+        <div className="flex flex-col lg:flex-row  flex items-center">
           <div className="flex-2">
             <div className="flex justify-center mt-[90px]">
               <button

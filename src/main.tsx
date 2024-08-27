@@ -8,7 +8,9 @@ import theme from "./theme.ts";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
     <ThemeProvider theme={theme}>
-      <App />
+      <div className="bg-[#E2E2E2]">
+        <App />
+      </div>
     </ThemeProvider>
   </StrictMode>
 );
