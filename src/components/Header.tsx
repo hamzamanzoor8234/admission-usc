@@ -60,7 +60,7 @@ const Header = () => {
           </div>
         </div>
         <Container>
-          <div className="flex mt-[114px] w-full gap-8 mx-auto justify-between flex-wrap">
+          <div className="flex mt-[114px] w-full gap-8 mx-auto justify-center lg:justify-between flex-wrap">
             {tilesData.map((tile) => (
               <div key={tile.title} className="max-w-[300px] w-full mb-8">
                 <div className="w-0 h-0 p-[50%] relative bg-[#FFFFFF63]">

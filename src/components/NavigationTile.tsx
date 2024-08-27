@@ -26,7 +26,7 @@ const NavigationTile = () => {
   ];
   return (
     <Container>
-      <div className="flex mt-[120px] w-full gap-8 mx-auto justify-center flex-wrap mb-[80px]">
+      <div className="flex mt-[120px] w-full gap-8 mx-auto justify-center flex-wrap mb-[80px] flex-col lg:flex-row">
         {tileData.map((obj) => (
           <CourseCard
             key={obj.title}

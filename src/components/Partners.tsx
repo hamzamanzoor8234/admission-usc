@@ -24,9 +24,9 @@ const Partners = () => {
   return (
     <section>
       <Container>
-        <div className="flex items-center mr-5">
+        <div className="flex items-center mr-5 flex-col lg:flex-row">
           <h3 className="text-[64px] ">
-            <span className="font-bold text-[#2EC89C]">Our</span>
+            <span className="font-bold text-[#2EC89C] mr-2">Our</span>
             Partners
           </h3>
           <img src={PartnerBanner} alt="PartnerBanner" />
