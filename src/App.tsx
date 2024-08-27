@@ -1,3 +1,4 @@
+import Career from "./components/Career";
 import Courses from "./components/Courses";
 import Events from "./components/Events";
 import Header from "./components/Header";
@@ -12,6 +13,7 @@ const App = () => {
       <Courses />
       <Partners />
       <Events />
+      <Career />
     </div>
   );
 };

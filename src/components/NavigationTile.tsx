@@ -1,6 +1,7 @@
 import Admission from "../assets/WhatsApp Image 2024-06-03 at 6.31.png";
 import findCity from "../assets/WhatsApp Image 2024-06-03 at 7.06.png";
 import scholarships from "../assets/WhatsApp Image 2024-06-06 at 8.53.png";
+import Container from "./Container";
 import CourseCard from "./CourseCard";
 const NavigationTile = () => {
   const tileData = [
@@ -24,17 +25,19 @@ const NavigationTile = () => {
     },
   ];
   return (
-    <div className="flex mt-[120px] max-w-[1320px] w-full gap-8 mx-auto justify-center flex-wrap mb-[80px]">
-      {tileData.map((obj) => (
-        <CourseCard
-          key={obj.title}
-          image={obj.img}
-          title={obj.title}
-          desc={obj.description}
-        //   cardSize="pr-[100%] pb-[62.5%]"
-        />
-      ))}
-    </div>
+    <Container>
+      <div className="flex mt-[120px] w-full gap-8 mx-auto justify-center flex-wrap mb-[80px]">
+        {tileData.map((obj) => (
+          <CourseCard
+            key={obj.title}
+            image={obj.img}
+            title={obj.title}
+            desc={obj.description}
+            //   cardSize="pr-[100%] pb-[62.5%]"
+          />
+        ))}
+      </div>
+    </Container>
   );
 };
 
